@@ -1,0 +1,30 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    block styles
+      link(rel='stylesheet', href='main.sass')
+    block scripts
+      //script(src='main.js')
+    title To Dos
+  body.has-text-black
+    .hero.is-fullheight.has-background-primary
+      .columns.is-centered
+        .column.has-text-centered.is-one-third
+          h1.is-size-1.pt-2.pb-3.px-3.my-2.mytitle productivity
+      .container.mx-6
+        .columns.is-centered.mx-6
+          .column
+            p.is-size-3 activities
+            .column.is-5.px-0
+              #activities_list
+              #activities_input
+          .column
+            p.is-size-3 to do
+  //load react
+  script(src='https://unpkg.com/react@16/umd/react.development.js', crossorigin)
+  script(src='https://unpkg.com/react-dom@16/umd/react-dom.development.js', crossorigin)
+  //load react component
+  script(src='src/react.js')

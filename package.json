@@ -1,0 +1,30 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-react": "^7.10.4",
+    "pug": "^3.0.0",
+    "sass": "^1.26.10"
+  },
+  "name": "todos",
+  "description": "",
+  "version": "1.0.0",
+  "main": "src/react.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/audreyhasson/todos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/audreyhasson/todos/issues"
+  },
+  "homepage": "https://github.com/audreyhasson/todos#readme"
+}
