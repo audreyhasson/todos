@@ -48,7 +48,7 @@ class AddAct extends React.Component {
     return (
       <div>
         {this.props.acts.map(item => (
-          <p className="is-size-5 py-1" key={item}>{item}</p>
+          <p className="is-size-5 py-1 no-select" key={item}>{item}</p>
         ))}
       </div>
     )
@@ -99,22 +99,32 @@ class InputToDo extends React.Component {
 class AddItem extends React.Component {
   constructor(props) {
     super(props);
+    this.handleCheck = this.handleCheck.bind(this);
   }
+  handleCheck(event) {
+    const status = event.target.textContent;
+    if (status === '☐') {
+      event.target.textContent = '✕';
+    }
+    else {
+      event.target.textContent = '☐';
+    }
+  };
   render() {
     return (
       <div>
         {this.props.items.map((value, index) => (
           <div key={index}>
-            <label class="checkbox">
-              <input type="checkbox" className="is-size-5 py-1"></input>
-            </label>
-            <span className="is-size-5 py-1"> {value}</span>
+            <span className="is-size-5 no-select" onClick={this.handleCheck}>☐</span>
+            <span className="is-size-5 py-1 no-select"> {value}</span>
           </div>
         ))}
       </div>
     )
   }
 }
+
+
 
 //render react thingies
 let domContainer1 = document.querySelector('#activities');

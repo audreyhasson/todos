@@ -21,6 +21,10 @@ $family-sans-serif: 'Open Sans', BlinkMacSystemFont, -apple-system, 'Segoe UI', 
 .mytitle
   border-bottom: 3px solid black
 
+//general styling
+.special-border
+  border: 3px solid black
+
 //activities styling
 $input-border-color: black
 $input-background-color: $primary
@@ -45,19 +49,30 @@ input.input::placeholder
 $button-color: $primary
 $button-background-color: black
 
-
 button.my-3.button:focus
   box-shadow: none
   color: black
   background-color: $primary
   border: solid black 2px
 
-
-
 button.my-3.button:hover
   background-color: $primary
   border: solid black 2px
   color: black
+
+//checkbox styling
+span.no-select
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+p.no-select
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
 
 
 /*button.is-black.my-3.button:hover

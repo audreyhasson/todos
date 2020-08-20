@@ -11,18 +11,18 @@ html(lang='en')
     title To Dos
   body.has-text-black
     .hero.is-fullheight.has-background-primary
-      .columns.is-centered
-        .column.has-text-centered.is-one-third
-          h1.is-size-1.pt-2.pb-3.px-3.my-2.mytitle productivity
-      .container.mx-6
+      .columns.is-centered.mytitle.mb-6
+        .column.has-text-centered.is-one-third.pb-0
+          h1.is-size-1.py-2.px-3.my-2 productivity
+      .container.mx-6.px-6
         .columns.is-centered.mx-6
-          .column
+          .column.special-border.is-one-third
             p.is-size-3 activities
-            .column.is-5.px-0
+            .column.px-0.is-6
               #activities
-          .column
+          .column.ml-5
             p.is-size-3 to do
-            .column.is-5.px-0
+            .column.is-6.px-0
               #todos
   //load react
   script(src='https://unpkg.com/react@16/umd/react.development.js', crossorigin)
