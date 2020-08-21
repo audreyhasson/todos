@@ -9,7 +9,7 @@
   "name": "todos",
   "description": "",
   "version": "1.0.0",
-  "main": "src/react.js",
+  "main": "docs/index.html",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2"
